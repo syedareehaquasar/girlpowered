@@ -84,6 +84,35 @@
     .carousel-control-next-icon {
       filter: brightness(200%);
     }
+    
+    #home {
+      padding-top: 20px; /* Adjust the padding as needed */
+    }
+
+    #home p {
+      text-align: justify;
+    }
+
+    #home img {
+      width: 100%;
+      max-height: 400px; /* Set the maximum height for the image */
+      object-fit: contain; /* Maintain the aspect ratio and cover the container */
+    }
+
+    /* Set a specific height for the columns */
+    .home-column {
+      height: 100%; /* Set the desired height */
+    }
+    
+    #logo-section {
+      text-align: center;
+      padding: 10px;
+      padding-top: 80px;
+    }
+
+    #logo-section img {
+      width: 50%; /* Adjust the width as needed */
+    }
   </style>
 </head>
 
@@ -110,47 +139,39 @@
       </ul>
     </div>
   </nav>
+  
+  <!-- Logo Section -->
+  <div id="logo-section">
+    <img src="https://github.com/syedareehaquasar/girlpowered/raw/main/assets/logo.png" alt="Girl Powered Logo">
+  </div>
 
   <!-- Home Section -->
   <section id="home" class="container mt-5">
-  <div class="banner-image">
-    <img src="https://github.com/syedareehaquasar/girlpowered/raw/main/assets/logo.png" alt="Banner Image" class="img-fluid">
-  </div>
-  <div class="row">
-      <div class="col-md-6">
+    <div class="row mt-4">
+      <div class="col-md-6 home-column">
         <strong>
-        <p>
-          Google, in collaboration with RECF, PwC US, India Community Center and Team 315 Paradigm is hosting two
-          in-person Girl Powered Robotics Workshops at the ICC (India Community Center) in Milpitas, CA.
+          <p>
+            Google, in collaboration with RECF, PwC US, India Community Center and Team 315 Paradigm is hosting two
+            in-person Girl Powered Robotics Workshops at the ICC (India Community Center) in Milpitas, CA.
           </p>
 
           <p>The workshops are for girls in Grades 3 to 5 on July 27-28, 2024, and Grades 6 to 12, 2024, on August 3-4,
-          2024. The workshops are geared towards girls and offers the students an opportunity to design and build a robot
-          from scratch and experience first hand the joys of solving real world engineering challenges through friendly
-          competition.
-</p>
-    <p>      Girl Powered is an initiative to redefine the face of STEM by creating a more inclusive environment for young
-          girls within the robotics community. The Girl Powered Workshop is an in-person event hosted to inform young
-          girls about STEM and robotics opportunity.
-        </p>
+            2024. The workshops are geared towards girls and offer the students an opportunity to design and build a
+            robot from scratch and experience firsthand the joys of solving real-world engineering challenges through
+            friendly competition.
+          </p>
+
+          <p>Girl Powered is an initiative to redefine the face of STEM by creating a more inclusive environment for
+            young girls within the robotics community. The Girl Powered Workshop is an in-person event hosted to inform
+            young girls about STEM and robotics opportunities.
+          </p>
         </strong>
       </div>
-      <div class="col-md-6">
-  <img src="https://github.com/syedareehaquasar/girlpowered/raw/main/assets/main.png" alt="Workshop Image" class="img-fluid">
-    </div>
+      <div class="col-md-6 home-column">
+        <img src="https://github.com/syedareehaquasar/girlpowered/raw/main/assets/main.png" alt="Workshop Image" class="img-fluid">
+      </div>
     </div>
   </section>
-
-<!-- Partners Section -->
-<section id="partners" class="container mt-5">
-  <h2 class="text-center mb-4">Partners</h2>
-  <div class="text-center">
-    <img src="https://github.com/syedareehaquasar/girlpowered/raw/main/assets/REC.png" alt="REC Foundation" height="50" class="mr-3">
-    <img src="https://github.com/syedareehaquasar/girlpowered/raw/main/assets/google.png" alt="Google" height="50" class="mr-3">
-    <img src="https://github.com/syedareehaquasar/girlpowered/raw/main/assets/pwc.png" alt="PwC" height="50" class="mr-3">
-    <img src="https://github.com/syedareehaquasar/girlpowered/raw/main/assets/315.png" alt="Team 315" height="50">
-  </div>
-</section>
 
 
 <!-- Events Banner Section -->
