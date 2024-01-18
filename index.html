@@ -13,11 +13,11 @@
     }
 
     .navbar {
-      background-color: #007bff;
+      background-color: white;
     }
 
     .navbar-light .navbar-nav .nav-link {
-      color: #ffffff;
+      color: #007bff;
     }
 
     #home,
@@ -113,6 +113,39 @@
     #logo-section img {
       width: 50%; /* Adjust the width as needed */
     }
+    
+/* Sponsors Section Styles */
+#sponsors {
+  background-color: #f8f9fa;
+  padding: 40px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+#sponsors h2 {
+  color: #007bff;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  text-align: center; /* Center the title text */
+}
+
+.sponsor-logos-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.sponsor-logo {
+  height: 100px; /* Set a fixed height for the logos */
+  margin: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.sponsor-logo:hover {
+  transform: scale(1.1);
+}
+
   </style>
 </head>
 
@@ -121,23 +154,8 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light">
     <a class="navbar-brand" href="#">
-      <!-- Add the logo here -->
       <img src="https://github.com/syedareehaquasar/girlpowered/raw/main/assets/logo.png" alt="Logo" height="30">
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#home">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#faq">FAQ</a>
-        </li>
-      </ul>
-    </div>
   </nav>
   
   <!-- Logo Section -->
@@ -172,6 +190,17 @@
       </div>
     </div>
   </section>
+  
+<!-- Sponsors Section -->
+<section id="sponsors" class="container mt-5">
+  <h2 class="text-center mb-4">Our Sponsors</h2>
+  <div class="sponsor-logos-container">
+    <img src="https://github.com/syedareehaquasar/girlpowered/raw/main/assets/REC.png" alt="REC Logo" class="img-fluid sponsor-logo">
+    <img src="https://github.com/syedareehaquasar/girlpowered/raw/main/assets/google.png" alt="Google Logo" class="img-fluid sponsor-logo">
+    <img src="https://github.com/syedareehaquasar/girlpowered/raw/main/assets/pwc.png" alt="PwC Logo" class="img-fluid sponsor-logo">
+    <img src="https://github.com/syedareehaquasar/girlpowered/raw/main/assets/315.png" alt="315 Paradigm Logo" class="img-fluid sponsor-logo">
+  </div>
+</section>
 
 
 <!-- Events Banner Section -->
@@ -206,89 +235,37 @@
 </section>
 
 
-  <!-- Past Events Section with Video Carousel -->
-  <section id="past-events" class="container mt-5">
-    <h2 class="text-center mb-4">Past Events</h2>
-    <div id="videoCarousel" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="d-flex justify-content-center">
-            <iframe width="300" height="168" src="https://www.youtube.com/embed/2fzxM6QDhlg" frameborder="0"
-              allowfullscreen></iframe>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="d-flex justify-content-center">
-            <iframe width="300" height="168" src="https://www.youtube.com/embed/zpcOkZj1eL8" frameborder="0"
-              allowfullscreen></iframe>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="d-flex justify-content-center">
-            <iframe width="300" height="168" src="https://www.youtube.com/embed/4Aj1aPsjFOU" frameborder="0"
-              allowfullscreen></iframe>
-          </div>
-        </div>
+  <!-- Past Events Section with Responsive Video Row -->
+<section id="past-events" class="container mt-5">
+  <h2 class="text-center mb-4">Past Events</h2>
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-4 mb-4">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2fzxM6QDhlg" frameborder="0"
+          allowfullscreen></iframe>
       </div>
-      <a class="carousel-control-prev" href="#videoCarousel" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#videoCarousel" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
     </div>
-  </section>
+    <div class="col-12 col-md-4 mb-4">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpcOkZj1eL8" frameborder="0"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="col-12 col-md-4 mb-4">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/4Aj1aPsjFOU" frameborder="0"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <!-- FAQ Section -->
-  <section id="faq" class="container mt-5">
-    <h2 class="text-center mb-4">FAQ</h2>
-    <p class="text-center"><em>Last updated: Jan 10, 2024</em></p>
-    <ul>
-      <li><strong>Which workshop is right for my student?</strong></li>
-      <p>
-        VIQ is open to students in elementary school (Grades 3 to 6), and VRC for middle school and high school
-        students (Grades 6 to 12).
-        If your team has mostly students in grades 3 to 6 in 2024-25 then VIQ will best suit them.
-      </p>
-      <li><strong>The student has participated in IQ previously but not in VRC. Can they be part of VRC this year?</strong>
-      </li>
-      <p>Yes, students can be part of VRC.</p>
-      <li><strong>Students who participated in VRC previously would like to attend it this year as well.</strong></li>
-      <p>
-        The purpose of the workshop is to introduce robotics to students who haven’t had exposure to robotics before.
-        We ask that students only attend the VRC workshop once to allow others the experience.
-      </p>
-      <li><strong>What is the minimum requirement to attend this workshop?</strong></li>
-      <p>
-        This event is for all girls, and no prior robotics or programming experience is needed.
-        It’s a great way to introduce robotics to those who may be curious, and we have sessions planned for a wide range
-        of experience levels and interests.
-      </p>
-      <li><strong>I am unable to find a mentor.</strong></li>
-      <p>
-        The purpose of a mentor is to oversee the students and help the girls in time management during the session.
-        Any adult can be the team mentor as no technical experience is required.
-      </p>
-      <li><strong>Where do I mention the names of students I would like to be grouped with on the same team?</strong></li>
-      <p>
-        In the express interest form and the RobotEvents registration form, there is a field where you can mention the
-        names of the students you would like to be grouped with.
-        We will try our best to match you to your preferences. If you don’t know the names at the time of application,
-        you can later email girlpowered.robotics.goog@gmail.com as long as it’s before June 15, 2024.
-      </p>
-      <li><strong>Can parents/guardians enter the venue?</strong></li>
-      <p>The entry to the venue is restricted to the registered team mentor and the students who registered for the
-        workshop.</p>
-      <li><strong>How to mention dietary restrictions?</strong></li>
-      <p>
-        Due to the size and scale of the event we will provide only Vegetarian and Non-vegetarian (Regular
-        Chicken/Turkey) food options.
-        If your student has dietary restrictions we recommend that they bring their own food.
-      </p>
-    </ul>
-  </section>
+
+    <!-- FAQ Section -->
+<section id="faq" class="container mt-5">
+  <h2 class="text-center mb-4">FAQ</h2>
+  <iframe src="https://docs.google.com/document/d/1PkUp1Ik5tWCc3ltHy1eFd383_YLvstiBPZQKnHPklfo/pub?embedded=true" width="100%" height="800"></iframe>
+</section>
   
   <!-- Footer -->
   <div class="footer">
