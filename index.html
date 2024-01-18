@@ -9,11 +9,12 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <style>
     body {
-      background-color: #f8f9fa;
+      background-color: #ffffff; /* Set background color to white */
+      color: #333; /* Set text color to dark */
     }
 
     .navbar {
-      background-color: white;
+      background-color: #f8f9fa; /* Set navbar background color */
     }
 
     .navbar-light .navbar-nav .nav-link {
@@ -24,8 +25,8 @@
     #faq,
     #partners,
     #events,
-    #past-events {
-      background-color: #ffffff;
+    #past-events, #sponsors {
+      background-color: #ffffff; /* Set section background color */
       padding: 40px;
       margin-top: 20px;
       border-radius: 10px;
@@ -64,7 +65,7 @@
       background-color: #000;
       opacity: 0.7;
     }
-    
+
     .banner-image {
       text-align: center;
       margin-top: 50px;
@@ -84,7 +85,7 @@
     .carousel-control-next-icon {
       filter: brightness(200%);
     }
-    
+
     #home {
       padding-top: 20px; /* Adjust the padding as needed */
     }
@@ -103,49 +104,33 @@
     .home-column {
       height: 100%; /* Set the desired height */
     }
-    
+
     #logo-section {
       text-align: center;
       padding: 10px;
-      padding-top: 80px;
+      padding-top: 50px;
     }
 
     #logo-section img {
       width: 50%; /* Adjust the width as needed */
     }
-    
-/* Sponsors Section Styles */
-#sponsors {
-  background-color: #f8f9fa;
-  padding: 40px;
-  margin-top: 20px;
-  border-radius: 10px;
-}
 
-#sponsors h2 {
-  color: #007bff;
-  margin-bottom: 30px;
-  text-transform: uppercase;
-  text-align: center; /* Center the title text */
-}
+    .sponsor-logos-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+    }
 
-.sponsor-logos-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-}
+    .sponsor-logo {
+      height: 100px; /* Set a fixed height for the logos */
+      margin: 10px;
+      transition: transform 0.3s ease-in-out;
+    }
 
-.sponsor-logo {
-  height: 100px; /* Set a fixed height for the logos */
-  margin: 10px;
-  transition: transform 0.3s ease-in-out;
-}
-
-.sponsor-logo:hover {
-  transform: scale(1.1);
-}
-
+    .sponsor-logo:hover {
+      transform: scale(1.1);
+    }
   </style>
 </head>
 
@@ -157,7 +142,7 @@
       <img src="https://github.com/syedareehaquasar/girlpowered/raw/main/assets/logo.png" alt="Logo" height="30">
     </a>
   </nav>
-  
+
   <!-- Logo Section -->
   <div id="logo-section">
     <img src="https://github.com/syedareehaquasar/girlpowered/raw/main/assets/logo.png" alt="Girl Powered Logo">
@@ -169,19 +154,19 @@
       <div class="col-md-6 home-column">
         <strong>
           <p>
-            Google, in collaboration with RECF, PwC US, India Community Center and Team 315 Paradigm is hosting two
+            Google, in collaboration with RECF, PwC US, India Community Center, and Team 315 Paradigm, is hosting two
             in-person Girl Powered Robotics Workshops at the ICC (India Community Center) in Milpitas, CA.
           </p>
 
-          <p>The workshops are for girls in Grades 3 to 5 on July 27-28, 2024, and Grades 6 to 12, 2024, on August 3-4,
-            2024. The workshops are geared towards girls and offer the students an opportunity to design and build a
-            robot from scratch and experience firsthand the joys of solving real-world engineering challenges through
-            friendly competition.
+          <p>The workshops are for girls in Grades 3 to 5 on July 27-28, 2024, and Grades 6 to 12 on August 3-4, 2024. The
+            workshops are geared towards girls and offer the students an opportunity to design and build a robot from
+            scratch and experience firsthand the joys of solving real-world engineering challenges through friendly
+            competition.
           </p>
 
-          <p>Girl Powered is an initiative to redefine the face of STEM by creating a more inclusive environment for
-            young girls within the robotics community. The Girl Powered Workshop is an in-person event hosted to inform
-            young girls about STEM and robotics opportunities.
+          <p>Girl Powered is an initiative to redefine the face of STEM by creating a more inclusive environment for young
+            girls within the robotics community. The Girl Powered Workshop is an in-person event hosted to inform young
+            girls about STEM and robotics opportunities.
           </p>
         </strong>
       </div>
@@ -190,83 +175,105 @@
       </div>
     </div>
   </section>
-  
-<!-- Sponsors Section -->
-<section id="sponsors" class="container mt-5">
-  <h2 class="text-center mb-4">Our Sponsors</h2>
-  <div class="sponsor-logos-container">
-    <img src="https://github.com/syedareehaquasar/girlpowered/raw/main/assets/REC.png" alt="REC Logo" class="img-fluid sponsor-logo">
-    <img src="https://github.com/syedareehaquasar/girlpowered/raw/main/assets/google.png" alt="Google Logo" class="img-fluid sponsor-logo">
-    <img src="https://github.com/syedareehaquasar/girlpowered/raw/main/assets/pwc.png" alt="PwC Logo" class="img-fluid sponsor-logo">
-    <img src="https://github.com/syedareehaquasar/girlpowered/raw/main/assets/315.png" alt="315 Paradigm Logo" class="img-fluid sponsor-logo">
-  </div>
-</section>
 
-
-<!-- Events Banner Section -->
-<section id="events" class="container mt-5">
-  <h2 class="display-4 text-center mb-4">Events</h2>
-
-  <div class="row">
-
-    <!-- VIQ Workshop -->
-    <div class="col-md-6">
-      <div class="jumbotron">
-        <img src="https://github.com/syedareehaquasar/girlpowered/raw/main/assets/VIQ.png" alt="VIQ Workshop" class="img-fluid mb-3">
-        <center>
-        <p class="lead">VIQ Workshop for grade 3 to 6</p>
-        <p>Date - 27-28, July, 2024</p>
-        <a href="#" class="btn btn-primary">Register Now</a></center>
-      </div>
+  <!-- Sponsors Section -->
+  <section id="sponsors" class="container mt-5">
+    <h2 class="text-center mb-4">Our Sponsors</h2>
+    <div class="sponsor-logos-container">
+      <img src="https://github.com/syedareehaquasar/girlpowered/raw/main/assets/REC.png" alt="REC Logo" class="img-fluid sponsor-logo">
+      <img src="https://github.com/syedareehaquasar/girlpowered/raw/main/assets/google.png" alt="Google Logo" class="img-fluid sponsor-logo">
+      <img src="https://github.com/syedareehaquasar/girlpowered/raw/main/assets/pwc.png" alt="PwC Logo" class="img-fluid sponsor-logo">
+      <img src="https://github.com/syedareehaquasar/girlpowered/raw/main/assets/315.png" alt="315 Paradigm Logo" class="img-fluid sponsor-logo">
     </div>
+  </section>
 
-    <!-- VRC Workshop -->
-    <div class="col-md-6">
-      <div class="jumbotron">
-        <img src="https://github.com/syedareehaquasar/girlpowered/raw/main/assets/VRC.png" alt="VRC Workshop" class="img-fluid mb-3">
-        <center>
-        <p class="lead">VRC Workshop for grade 6 to 12</p>
-        <p>Date - August 3-4, 2024</p>
-        <a href="#" class="btn btn-primary">Register Now</a> </center>
+  <!-- Events Banner Section -->
+  <section id="events" class="container mt-5">
+    <h2 class="text-center mb-4">Events</h2>
+
+    <div class="row">
+
+      <!-- VIQ Workshop -->
+      <div class="col-md-6">
+        <div class="jumbotron">
+          <img src="https://github.com/syedareehaquasar/girlpowered/raw/main/assets/VIQ.png" alt="VIQ Workshop" class="img-fluid mb-3">
+          <center>
+            <p class="lead">VIQ Workshop for grades 3 to 6</p>
+            <p>Date - 27-28, July, 2024</p>
+            <a href="#" class="btn btn-primary">Register Now</a></center>
+        </div>
       </div>
+
+      <!-- VRC Workshop -->
+      <div class="col-md-6">
+        <div class="jumbotron">
+          <img src="https://github.com/syedareehaquasar/girlpowered/raw/main/assets/VRC.png" alt="VRC Workshop" class="img-fluid mb-3">
+          <center>
+            <p class="lead">VRC Workshop for grades 6 to 12</p>
+            <p>Date - August 3-4, 2024</p>
+            <a href="#" class="btn btn-primary">Register Now</a> </center>
+        </div>
+      </div>
+
     </div>
-
-  </div>
-</section>
-
+  </section>
 
   <!-- Past Events Section with Responsive Video Row -->
+<!-- Past Events Section with Responsive Video Row -->
 <section id="past-events" class="container mt-5">
   <h2 class="text-center mb-4">Past Events</h2>
   <div class="row justify-content-center">
+
+    <!-- Video 1 -->
     <div class="col-12 col-md-4 mb-4">
-      <div class="embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2fzxM6QDhlg" frameborder="0"
-          allowfullscreen></iframe>
+      <div class="card">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2fzxM6QDhlg" frameborder="0"
+            allowfullscreen alt="Google Girl Powered Workshop 2018"></iframe>
+        </div>
+        <div class="card-body">
+          <p class="card-text text-center">Google Girl Powered Workshop 2018</p>
+        </div>
       </div>
     </div>
+
+    <!-- Video 2 -->
     <div class="col-12 col-md-4 mb-4">
-      <div class="embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpcOkZj1eL8" frameborder="0"
-          allowfullscreen></iframe>
+      <div class="card">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpcOkZj1eL8" frameborder="0"
+            allowfullscreen alt="Google Girl Powered Workshop 2019"></iframe>
+        </div>
+        <div class="card-body">
+          <p class="card-text text-center">Google Girl Powered Workshop 2019</p>
+        </div>
       </div>
     </div>
+
+    <!-- Video 3 -->
     <div class="col-12 col-md-4 mb-4">
-      <div class="embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/4Aj1aPsjFOU" frameborder="0"
-          allowfullscreen></iframe>
+      <div class="card">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/4Aj1aPsjFOU" frameborder="0"
+            allowfullscreen alt="Google Girl Powered Workshop 2022"></iframe>
+        </div>
+        <div class="card-body">
+          <p class="card-text text-center">Google Girl Powered Workshop 2022</p>
+        </div>
       </div>
     </div>
+
   </div>
 </section>
 
 
-    <!-- FAQ Section -->
-<section id="faq" class="container mt-5">
-  <h2 class="text-center mb-4">FAQ</h2>
-  <iframe src="https://docs.google.com/document/d/1PkUp1Ik5tWCc3ltHy1eFd383_YLvstiBPZQKnHPklfo/pub?embedded=true" width="100%" height="800"></iframe>
-</section>
-  
+
+  <!-- FAQ Section -->
+  <section id="faq" class="container mt-5">
+    <h2 class="text-center mb-4">FAQ</h2>
+    <iframe src="https://docs.google.com/document/d/1PkUp1Ik5tWCc3ltHy1eFd383_YLvstiBPZQKnHPklfo/pub?embedded=true" width="100%" height="800"></iframe>
+  </section>
+
   <!-- Footer -->
   <div class="footer">
     <p>For any further queries please reach out to <a href="mailto:girlpowered.robotics.goog@gmail.com" style="color: #ffffff;">girlpowered.robotics.goog@gmail.com</a></p>
